@@ -1,0 +1,97 @@
+// BEGIN style for FORMS
+@import "./variables";
+
+.crane-main {
+  max-width: $crane-main-max-width;
+  margin: $crane-main-padding auto;
+  padding: 0 $crane-main-padding;
+}
+
+.crane-row {
+  display: flex;
+  margin-bottom: $crane-row-margin;
+
+  @media (max-width: $crane-row-breakpoint) {
+    flex-direction: column;
+  }
+}
+
+.crane-row--submit {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.crane-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.crane-field + .crane-field {
+  margin-left: 16px;
+
+  @media (max-width: $crane-row-breakpoint) {
+    margin-left: 0;
+    margin-top: $crane-row-margin;
+  }
+}
+
+.crane-button {
+  width: 150px;
+}
+
+// END style for FORMS
+
+
+
+
+
+// import Material styles here rather than within individual components
+@import "@material/animation/variables";
+@import "@material/animation/functions";
+@import "@material/typography/mdc-typography";
+@import "@material/layout-grid/mdc-layout-grid";
+@import "@material/card/mdc-card";
+@import "@material/button/mdc-button";
+@import "@material/fab/mdc-fab";
+@import "@material/icon-button/mdc-icon-button";
+@import "@material/chips/mdc-chips";
+@import "@material/dialog/mdc-dialog";
+@import "@material/image-list/mdc-image-list";
+@import "@material/list/mdc-list";
+@import "@material/menu-surface/mdc-menu-surface";
+@import "@material/menu/mdc-menu";
+@import "@material/top-app-bar/mdc-top-app-bar";
+@import "@material/drawer/mdc-drawer";
+@import "@material/snackbar/mdc-snackbar";
+// TABS
+@import "@material/tab-bar/mdc-tab-bar";
+@import "@material/tab-scroller/mdc-tab-scroller";
+@import "@material/tab-indicator/mdc-tab-indicator";
+@import "@material/tab/mdc-tab";
+// FORMS
+@import "@material/form-field/mdc-form-field";
+@import "@material/textfield/mdc-text-field";
+@import "@material/select/mdc-select";
+@import "@material/checkbox/mdc-checkbox";
+@import "@material/radio/mdc-radio";
+@import "@material/slider/mdc-slider";
+@import "@material/switch/mdc-switch";
+@import "@material/textfield/character-counter/mdc-text-field-character-counter";
+@import "@material/textfield/icon/mdc-text-field-icon";
+@import "@material/textfield/helper-text/mdc-text-field-helper-text";
+
+
+
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin:0;
+  // padding-top: 64px;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}

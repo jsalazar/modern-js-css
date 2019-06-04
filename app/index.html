@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>modern js css</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+
+
+
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell--span-3">
+          
+            <div>
+              <h3 class="mdc-typography--subtitle1">Text Button</h3>
+              <button class="demo-button mdc-button undefined ">
+                <span class="mdc-button__label">Default</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--dense undefined " style="--mdc-ripple-fg-size:38px; --mdc-ripple-fg-scale:2.14616; --mdc-ripple-fg-translate-start:17.168px, 0.933594px; --mdc-ripple-fg-translate-end:13px, -3px;">
+                <span class="mdc-button__label">Dense</span>
+              </button>
+              <button class="demo-button mdc-button undefined ">
+                <i class="material-icons mdc-button__icon">favorite</i>
+                <span class="mdc-button__label">Icon</span>
+              </button>
+            </div>
+            <div>
+              <h3 class="mdc-typography--subtitle1">Raised Button</h3>
+              <button class="demo-button mdc-button mdc-button--raised ">
+                <span class="mdc-button__label">Default</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--dense mdc-button--raised ">
+                <span class="mdc-button__label">Dense</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--raised ">
+                <i class="material-icons mdc-button__icon">favorite</i>
+                <span class="mdc-button__label">Icon</span>
+              </button>
+            </div>
+            <div>
+              <h3 class="mdc-typography--subtitle1">Unelevated Button</h3>
+              <button class="demo-button mdc-button mdc-button--unelevated ">
+                <span class="mdc-button__label">Default</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--dense mdc-button--unelevated ">
+                <span class="mdc-button__label">Dense</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--unelevated ">
+                <i class="material-icons mdc-button__icon">favorite</i>
+                <span class="mdc-button__label">Icon</span>
+              </button>
+            </div>
+            <div>
+              <h3 class="mdc-typography--subtitle1">Outlined Button</h3>
+              <button class="demo-button mdc-button mdc-button--outlined ">
+                <span class="mdc-button__label">Default</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--dense mdc-button--outlined ">
+                <span class="mdc-button__label">Dense</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--outlined ">
+                <i class="material-icons mdc-button__icon">favorite</i>
+                <span class="mdc-button__label">Icon</span>
+              </button>
+            </div>
+            <div>
+              <h3 class="mdc-typography--subtitle1">Shaped Button</h3>
+              <button class="demo-button mdc-button mdc-button--unelevated demo-button-shaped ">
+                <span class="mdc-button__label">Default</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--dense mdc-button--unelevated demo-button-shaped ">
+                <span class="mdc-button__label">Dense</span>
+              </button>
+              <button class="demo-button mdc-button mdc-button--unelevated demo-button-shaped ">
+                <i class="material-icons mdc-button__icon">favorite</i>
+                <span class="mdc-button__label">Icon</span>
+              </button>
+            </div>
+            <div>
+                <h3 class="mdc-typography--subtitle1">FAB</h3>
+                <button class="mdc-fab demo-button" aria-label="Favorite">
+                    <span class="mdc-fab__icon material-icons">favorite</span>
+                </button>
+    
+                <button class="mdc-fab mdc-fab--extended demo-button">
+                    <span class="material-icons mdc-fab__icon">add</span>
+                    <span class="mdc-fab__label">Create</span>
+                  </button>
+            </div>
+          
+    
+        </div>
+        <div class="mdc-layout-grid__cell--span-3">
+            <div class="mdc-card">
+                <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+                  <div class="mdc-card__media mdc-card__media--16-9 demo-card__media" style="background-image: url(&quot;https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg&quot;);"></div>
+                  <div class="demo-card__primary">
+                    <h2 class="demo-card__title mdc-typography mdc-typography--headline6">Our Changing Planet</h2>
+                    <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2">by Kurt Wagner</h3>
+                  </div>
+                  <div class="demo-card__secondary mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+                </div>
+                <div class="mdc-card__actions">
+                  <div class="mdc-card__action-buttons">
+                    <button class="mdc-button mdc-card__action mdc-card__action--button">Read</button>
+                    <button class="mdc-button mdc-card__action mdc-card__action--button">Bookmark</button>
+                  </div>
+                  <div class="mdc-card__action-icons">
+                    <button id="add-to-favorites" class="mdc-icon-button mdc-card__action mdc-card__action--icon--unbounded" aria-pressed="false" aria-label="Add to favorites" title="Add to favorites">
+                      <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+                      <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+                    </button>
+                    <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="Share" data-mdc-ripple-is-unbounded="true">share</button>
+                    <!-- <button class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded" title="More options" data-mdc-ripple-is-unbounded="true">more_vert</button> -->
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="mdc-layout-grid__cell--span-3 ">
+            <div class="mdc-chip-set">
+                <div class="mdc-chip" tabindex="0">
+                  <div class="mdc-chip__text">Chip content</div>
+                </div>
+                <div class="mdc-chip">
+                    <i class="material-icons mdc-chip__icon mdc-chip__icon--leading">event</i>
+                    <div class="mdc-chip__text">Add to calendar</div>
+                </div>
+                <div class="mdc-chip">
+                    <div class="mdc-chip__text">Jane Smith</div>
+                    <i class="material-icons mdc-chip__icon mdc-chip__icon--trailing" tabindex="0" role="button">cancel</i>
+                </div>
+            </div>
+        </div>
+        <div class="mdc-layout-grid__cell--span-3">
+            <!-- <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="open" style="--mdc-ripple-fg-size:45px; --mdc-ripple-fg-scale:2.09038; --mdc-ripple-fg-translate-start:26.3125px, -8.57813px; --mdc-ripple-fg-translate-end:15.4844px, -4.5px;">Open</button> -->
+            <button class='mdc-button' id="alert-dialog">Alert</button>
+    
+    
+          <div class="mdc-dialog"
+            role="alertdialog"
+            aria-modal="true"
+            aria-labelledby="my-dialog-title"
+            aria-describedby="my-dialog-content">
+            <div class="mdc-dialog__container">
+              <div class="mdc-dialog__surface">
+                <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+                <h2 class="mdc-dialog__title" id="my-dialog-title"><!--
+                -->Choose a Ringtone<!--
+              --></h2>
+                <div class="mdc-dialog__content" id="my-dialog-content">
+                    <ul class="mdc-list">
+                        <li class="mdc-list-item" tabindex="0">
+                          <span class="mdc-list-item__text">Single-line item</span>
+                        </li>
+                        <li class="mdc-list-item">
+                          <span class="mdc-list-item__text">Single-line item</span>
+                        </li>
+                        <li class="mdc-list-item">
+                          <span class="mdc-list-item__text">Single-line item</span>
+                        </li>
+                      </ul>
+                </div>
+              </div>
+            </div>
+            <div class="mdc-dialog__scrim"></div>
+          </div>
+    
+          <ul class="mdc-list demo-list mdc-list--two-line mdc-list--avatar-list">
+            <li class="mdc-list-item mdc-ripple-upgraded" tabindex="0">
+              <span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span>
+              <span class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">Dog Photos</span>
+                <span class="mdc-list-item__secondary-text">9 Jan 2018</span>
+              </span>
+              <span class="mdc-list-item__meta material-icons" aria-hidden="true">info</span>
+            </li>
+          
+            <li class="mdc-list-divider" role="separator"></li>
+    
+            <li class="mdc-list-item mdc-ripple-upgraded" tabindex="-1">
+              <span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span>
+              <span class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">Cat Photos</span>
+                <span class="mdc-list-item__secondary-text">22 Dec 2017</span>
+              </span>
+              <span class="mdc-list-item__meta material-icons" aria-hidden="true">info</span>
+            </li>
+            
+            <li class="mdc-list-divider" role="separator"></li>
+    
+            <li class="mdc-list-item mdc-ripple-upgraded" id="9b7b164a-a39c-48a9-b8e7-ebd8b094852e" tabindex="-1">
+              <span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span>
+              <span class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">Potatoes</span>
+                <span class="mdc-list-item__secondary-text">30 Noc 2017</span>
+              </span>
+              <span class="mdc-list-item__meta material-icons" aria-hidden="true">info</span>
+            </li>
+            
+            <li class="mdc-list-divider" role="separator"></li>
+    
+            <li class="mdc-list-item mdc-ripple-upgraded" tabindex="-1">
+              <span class="mdc-list-item__graphic material-icons" aria-hidden="true">folder</span>
+              <span class="mdc-list-item__text">
+                <span class="mdc-list-item__primary-text">Carrots</span>
+                <span class="mdc-list-item__secondary-text">17 Oct 2017</span>
+              </span>
+              <span class="mdc-list-item__meta material-icons" aria-hidden="true">info</span>
+            </li>
+          </ul>
+    
+        </div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">
+            
+        </div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">6</div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">7</div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">8</div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">9</div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">10</div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">11</div>
+        <div class="mdc-layout-grid__cell--span-3 mdc-layout-grid__cell--bg-grey">12</div>
+      </div>  
+    </div>  
+    
+    
+    <h3 class="mdc-typography--headline3">Standard Image List </h3>
+    <ul class="mdc-image-list standard-image-list mdc-image-list--with-text-protection">
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/1.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/3.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/4.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/5.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/6.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/7.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/8.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/9.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/10.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/11.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/12.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/13.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/14.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <div class="mdc-image-list__image-aspect-container">
+          <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/15.jpg" alt="Text label">
+        </div>
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+    </ul>
+    
+    
+    
+    <h3 class="mdc-typography--headline3">Masonry</h3>
+    
+    <ul class="mdc-image-list mdc-image-list--masonry masonry-image-list">
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/16.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/1.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/1.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/2.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/3.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/2.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/4.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/3.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/5.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/4.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/6.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/5.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/2x3/7.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/6.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+      <li class="mdc-image-list__item">
+        <img class="mdc-image-list__image" src="https://material-components.github.io/material-components-web-catalog/static/media/photos/3x2/7.jpg" alt="Text label">
+        <div class="mdc-image-list__supporting"><span class="mdc-image-list__label">Text label</span></div>
+      </li>
+    </ul>
+    
+    
+    
+    
+    <div style="margin:24px">
+    
+    
+    <h3 class="mdc-typography--headline3">Buffered Progress Bars</h3>
+    
+    <div role="progressbar" class="mdc-linear-progress ">
+      <div class="mdc-linear-progress__buffering-dots"></div>
+      <div class="mdc-linear-progress__buffer" style="transform: scaleX(0.75);"></div>
+      <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar" style="transform: scaleX(0.5);">
+        <span class="mdc-linear-progress__bar-inner"></span>
+      </div>
+      <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+        <span class="mdc-linear-progress__bar-inner"></span>
+      </div>
+    </div>
+    <br><br><br>
+    <div role="progressbar" class="mdc-linear-progress">
+        <div class="mdc-linear-progress__buffering-dots"></div>
+        <div class="mdc-linear-progress__buffer"></div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__primary-bar">
+          <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+        <div class="mdc-linear-progress__bar mdc-linear-progress__secondary-bar">
+          <span class="mdc-linear-progress__bar-inner"></span>
+        </div>
+      </div>
+    
+    <h3 class="mdc-typography--headline3">List</h3>
+    <ul class="mdc-list demo-list-A">
+      <li class="mdc-list-item mdc-ripple-upgraded" tabindex="-1">
+        <span class="mdc-list-item__graphic material-icons" aria-hidden="true">inbox</span>Inbox
+      </li>
+      <li class="mdc-list-item mdc-list-item--activated mdc-ripple-upgraded" tabindex="-1" aria-selected="true">
+        <span class="mdc-list-item__graphic material-icons" aria-hidden="true">star</span>Star
+      </li>
+      <li class="mdc-list-item mdc-ripple-upgraded"  tabindex="-1">
+        <span class="mdc-list-item__graphic material-icons" aria-hidden="true">send</span>Send
+      </li>
+      <li class="mdc-list-item mdc-ripple-upgraded"  tabindex="-1">
+        <span class="mdc-list-item__graphic material-icons" aria-hidden="true">drafts</span>Drafts
+      </li>
+    </ul>
+    
+    
+    
+    <h3 class="mdc-typography--headline3">Open Menu</h3>
+    
+    <button class="mdc-button" id="mdc-menu--menu-toggle">Open menu</button>
+    <div class="mdc-menu-surface--anchor">
+      <div class="mdc-menu mdc-menu-surface" tabindex="-1" style="transform-origin: center bottom; left: 0px; bottom: 0px; max-height: 605.781px;">
+        <ul class="mdc-list" role="menu" aria-hidden="true">
+          <li class="mdc-list-item" role="menuitem" tabindex="0">Passionfruit</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="-1">Orange</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="-1">Guava</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="-1">Pitaya</li>
+          <li class="mdc-list-divider" role="separator"></li>
+          <li class="mdc-list-item" role="menuitem" tabindex="-1">Pineapple</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="-1">Mango</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="-1">Papaya</li>
+          <li class="mdc-list-item" role="menuitem" tabindex="-1">Lychee</li>
+        </ul>
+      </div>
+    </div>
+    
+    
+  
+    <h3 class="mdc-typography--headline3">Snackbar</h3>
+    <button class="demo-button mdc-button mdc-button--raised" id="mdc-menu--snackbar-toggle">
+      <span class="mdc-button__label">Open Snackbar</span>
+    </button>
+    
+    <div class="mdc-snackbar">
+      <div class="mdc-snackbar__surface">
+        <div class="mdc-snackbar__label"
+              role="status"
+              aria-live="polite">
+          Can't send photo. Retry in 5 seconds.
+        </div>
+        <div class="mdc-snackbar__actions">
+          <button type="button" class="mdc-button mdc-snackbar__action">Retry</button>
+          <button class="mdc-icon-button mdc-snackbar__dismiss material-icons" title="Dismiss">close</button>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+    <h3 class="mdc-typography--headline3">Tabs</h3>
+  
+    <div class="mdc-tab-bar" role="tablist">
+        <div class="mdc-tab-scroller">
+          <div class="mdc-tab-scroller__scroll-area">
+            <div class="mdc-tab-scroller__scroll-content">
+  
+              <button class="mdc-tab mdc-tab--active" role="tab" aria-selected="true" tabindex="0">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                  <span class="mdc-tab__text-label">Favorites</span>
+                </span>
+                <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+  
+              <button class="mdc-tab" role="tab" aria-selected="false" tabindex="1" id="mdc-tab-4">
+                <span class="mdc-tab__content">
+                  <span class="mdc-tab__icon material-icons" aria-hidden="true">access_time</span>
+                  <span class="mdc-tab__text-label">Recents</span>
+                </span>
+                <span class="mdc-tab-indicator">
+                  <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                </span>
+                <span class="mdc-tab__ripple"></span>
+              </button>
+  
+              <button class="mdc-tab" role="tab" aria-selected="false" tabindex="2" id="mdc-tab-5">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">near_me</span>
+                    <span class="mdc-tab__text-label">Nearby</span>
+                  </span>
+                  <span class="mdc-tab-indicator">
+                      <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+              </button>
+  
+              <button class="mdc-tab" role="tab" aria-selected="false" tabindex="3" id="mdc-tab-6">
+                  <span class="mdc-tab__content">
+                    <span class="mdc-tab__icon material-icons" aria-hidden="true">favorite</span>
+                    <span class="mdc-tab__text-label">Favorites</span>
+                  </span>
+                  <span class="mdc-tab-indicator">
+                    <span class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"></span>
+                  </span>
+                  <span class="mdc-tab__ripple"></span>
+              </button>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="mdc-tab-bar__content">
+        <div class="snaky-snaks">
+            snacks one snacks one snacks one snacks one snacks one snacks one snacks one 
+            snacks one snacks one snacks one snacks one snacks one snacks one snacks one 
+            snacks one snacks one snacks one snacks one snacks one snacks one snacks one 
+            snacks one snacks one snacks one snacks one snacks one snacks one snacks one 
+            snacks one snacks one snacks one snacks one snacks one snacks one snacks one 
+        </div>
+        <div class="snaky-snaks snaky-snaks--hidden">
+            snacks two snacks two snacks two snacks two snacks two snacks two snacks two 
+            snacks two snacks two snacks two snacks two snacks two snacks two snacks two 
+            snacks two snacks two snacks two snacks two snacks two snacks two snacks two 
+            snacks two snacks two snacks two snacks two snacks two snacks two snacks two 
+            snacks two snacks two snacks two snacks two snacks two snacks two snacks two 
+          </div>
+          <div class="snaky-snaks snaky-snaks--hidden">
+              snacks three snacks three snacks three snacks three snacks three snacks three 
+              snacks three snacks three snacks three snacks three snacks three snacks three 
+              snacks three snacks three snacks three snacks three snacks three snacks three 
+              snacks three snacks three snacks three snacks three snacks three snacks three 
+              snacks three snacks three snacks three snacks three snacks three snacks three 
+            </div>
+      </div>
+  
+  
+  
+  
+  
+  
+  
+  
+      <h1 class="mdc-typography--headline1">Headline 1</h1>
+      <h2 class="mdc-typography--headline2">Headline 2</h2>
+      <h3 class="mdc-typography--headline3">Headline 3</h3>
+      <h4 class="mdc-typography--headline4">Headline 4</h4>
+      <h5 class="mdc-typography--headline5">Headline 5</h5>
+      <h6 class="mdc-typography--headline6">Headline 6</h6>
+      <h6 class="mdc-typography--subtitle1">Subtitle 1</h6>
+      <h6 class="mdc-typography--subtitle2">Subtitle 2</h6>
+      <p class="mdc-typography--body1">Body 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos blanditiis
+        tenetur unde suscipit, quam beatae rerum inventore consectetur, neque doloribus, cupiditate numquam dignissimos
+        laborum fugiat deleniti? Eum quasi quidem quibusdam.
+      </p>
+      <p class="mdc-typography--body2">Body 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aliquid ad
+        quas sunt voluptatum officia dolorum cumque, possimus nihil molestias sapiente necessitatibus dolor saepe inventore,
+        soluta id accusantium voluptas beatae.
+      </p>
+      <div><span class="mdc-typography--button">Button text</span></div>
+      <div><span class="mdc-typography--caption">Caption text</span></div>
+      <div><span class="mdc-typography--overline">Overline text</span></div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    </div> <!-- end margin: 24px -->
+  
+  
+  
+  
+  
+  
+  
+    <h3 class="mdc-typography--headline3">Formz!!!</h3>
+  
+  
+    <main class="crane-main">
+      <form method="post" action="." id="crane-shipping-form">
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-text-field">
+              <input class="mdc-text-field__input" id="crane-name-input" type="text" required >
+              <label class="mdc-floating-label" for="crane-name-input">
+                Name
+              </label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-text-field">
+              <input class="mdc-text-field__input" id="crane-address-input" type="text" required>
+              <label class="mdc-floating-label" for="crane-address-input">
+                Address
+              </label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-text-field">
+              <input class="mdc-text-field__input" id="crane-city-input" type="text" required>
+              <label class="mdc-floating-label" for="crane-city-input">
+                City
+              </label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-select">
+              <i class="mdc-select__dropdown-icon"></i>
+              <select class="mdc-select__native-control" id="crane-state-input" required>
+                <option value="" selected></option>
+                <option value="AL">Alabama</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="MI">Michigan</option>
+                <option value="OH">Ohio</option>
+                <option value="TX">Texas</option>
+                <option value="WY">Wyoming</option>
+              </select>
+              <label class="mdc-floating-label" for="crane-state-input">
+                State
+              </label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          </div>
+          <div class="crane-field">
+            <div class="mdc-text-field">
+              <!--
+                Note: `pattern="[0-9]*"` tells Safari on iPhone to display a large numeric keypad without decimal points.
+                See https://www.filamentgroup.com/lab/type-number.html
+              -->
+              <input class="mdc-text-field__input" id="crane-zip-code-input"
+                     type="text" required minlength="5" maxlength="5" pattern="[0-9]*">
+              <label class="mdc-floating-label" for="crane-zip-code-input">
+                ZIP Code
+              </label>
+              <div class="mdc-line-ripple"></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-form-field">
+              <div class="mdc-checkbox">
+                <input type="checkbox" class="mdc-checkbox__native-control" id="checkbox-1"/>
+                <div class="mdc-checkbox__background">
+                  <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                    <path class="mdc-checkbox__checkmark-path"
+                          fill="none"
+                          d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                  </svg>
+                  <div class="mdc-checkbox__mixedmark"></div>
+                </div>
+              </div>
+              <label for="checkbox-1">Checkbox 1</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-form-field">
+              <div class="mdc-radio">
+                <input class="mdc-radio__native-control" type="radio" id="radio-1" name="radios" checked>
+                <div class="mdc-radio__background">
+                  <div class="mdc-radio__outer-circle"></div>
+                  <div class="mdc-radio__inner-circle"></div>
+                </div>
+              </div>
+              <label for="radio-1">Radio 1</label>
+            </div>
+          </div>
+        </div>
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-form-field">
+              <div class="mdc-radio">
+                  <input class="mdc-radio__native-control" type="radio" id="radio-2" name="radios" checked>
+                  <div class="mdc-radio__background">
+                    <div class="mdc-radio__outer-circle"></div>
+                    <div class="mdc-radio__inner-circle"></div>
+                  </div>
+              </div>
+              <label for="radio-2">Radio 2</label>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-slider" tabindex="0" role="slider"
+                aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+                aria-label="Select Value">
+              <div class="mdc-slider__track-container">
+                <div class="mdc-slider__track"></div>
+              </div>
+              <div class="mdc-slider__thumb-container">
+                <svg class="mdc-slider__thumb" width="21" height="21">
+                  <circle cx="10.5" cy="10.5" r="7.875"></circle>
+                </svg>
+                <div class="mdc-slider__focus-ring"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-form-field">
+              <div class="mdc-switch">
+                <div class="mdc-switch__track"></div>
+                <div class="mdc-switch__thumb-underlay">
+                  <div class="mdc-switch__thumb">
+                      <input type="checkbox" id="basic-switch" class="mdc-switch__native-control" role="switch">
+                  </div>
+                </div>
+              </div>
+              <label for="basic-switch">off/on</label>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="crane-row">
+          <div class="crane-field">
+            <div class="mdc-text-field mdc-text-field--textarea">
+              <div class="mdc-text-field-character-counter">0 / 140</div>
+              <textarea id="textarea" class="mdc-text-field__input" rows="8" cols="40" maxlength="140"></textarea>
+              <div class="mdc-notched-outline">
+                <div class="mdc-notched-outline__leading"></div>
+                <div class="mdc-notched-outline__notch">
+                  <label for="textarea" class="mdc-floating-label">Textarea Label</label>
+                </div>
+                <div class="mdc-notched-outline__trailing"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+        <div class="mdc-text-field mdc-text-field--with-leading-icon">
+            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">event</i>
+            <input type="text" id="my-input" class="mdc-text-field__input">
+            <label for="my-input" class="mdc-floating-label">Your Name</label>
+            <div class="mdc-line-ripple"></div>
+        </div>
+        
+  <br><br>
+        <div class="mdc-text-field mdc-text-field--with-trailing-icon">
+            <input type="text" id="my-input" class="mdc-text-field__input">
+            <label for="my-input" class="mdc-floating-label">Your Name</label>
+            <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">event</i>
+            <div class="mdc-line-ripple"></div>
+        </div>
+  <br><br>
+  <div class="mdc-text-field mdc-text-field--with-leading-icon mdc-text-field--with-trailing-icon">
+      <i class="material-icons mdc-text-field__icon">phone</i>
+      <input type="text" id="my-input" class="mdc-text-field__input">
+      <label for="my-input" class="mdc-floating-label">Phone Number</label>
+      <i class="material-icons mdc-text-field__icon" tabindex="0" role="button">event</i>
+      <div class="mdc-line-ripple"></div>
+    </div>
+  <br><br>
+  <div class="mdc-text-field">
+      <input type="text" id="username" class="mdc-text-field__input"
+             aria-controls="username-helper-text"
+             aria-describedby="username-helper-text">
+      <label for="username" class="mdc-floating-label">Username</label>
+      <div class="mdc-line-ripple"></div>
+    </div>
+    <div class="mdc-text-field-helper-line">
+      <div id="username-helper-text" class="mdc-text-field-helper-text mdc-text-field-helper-text--persistent" aria-hidden="true">
+        This will be displayed on your public profile
+      </div>
+    </div>
+  
+  
+  
+        <div class="crane-row crane-row--submit">
+          <button type="submit" class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Save</span>
+          </button>
+        </div>
+  
+      </form>
+    </main>
+
+
+
+
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
